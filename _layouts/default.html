@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.3.1/gridlex.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300|Share+Tech+Mono" rel="stylesheet">
+  <script src="https://use.fontawesome.com/907fdd13d4.js"></script>
+  <title>Space Place </title>
+  <link href="css/styles.css" type="text/css" rel="stylesheet">
+</head>
+
+<!-- BODY START  -->
+<body class="grid">
+  <section class="col{{page.colwidth}} frame">
+    <header>
+      <h1>Mission Launch</h1>
+      <h2>Date and/or Time</h2>
+    </header>
+
+<!-- STORY Content PROBLEM AREA
+--------------------------->
+    <div class="story">
+      <h3>{{page.storyhead}}</h3>
+      {% for spot in page.instructions %}
+      <p>{{spot.task}}</p>
+      {% endfor %}
+    </div>
+
+<!-- NEXT STEP LINKS
+--------------------------->
+    <div class="nextstep">
+      <h3>{{page.nexttitle}}</h3>
+      {% for spot in page.destinations %}
+      <a href="{{spot.weblink}}" class="button">{{spot.visit}}</a>
+      {% endfor %}
+    </div>
+
+
+<!-- FOOTER HERE
+--------------------------->
+    <footer class="grid-4-right">
+      <div class="col">
+        <a href="LINKTOHOME">reset</a>
+      </div>
+    </footer>
+  </section>
+
+<!-- IMAGE DIVS START -->
+{% unless page.stars == go %}
+<section class="col">
+  {{content}}
+</section>
+{% endunless %}
+
+</body>
+</html>

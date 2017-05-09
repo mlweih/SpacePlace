@@ -7,4 +7,8 @@ Inspiration/main_flash_image.jpg
 
 Inspiration/space_mindmap.png
 
-Inspiration
+Inspiration/
+
+_site/
+.sass-cache/
+jekyl-metadata/
