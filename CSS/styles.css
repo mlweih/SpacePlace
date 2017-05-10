@@ -15,7 +15,17 @@ Fonts:
   heading: 'Share Tech Mono', monospace;
   body: font-family: 'Roboto', sans-serif;
 Colors:
+  maastricht blue: #0A1C38
+  maximum red: #D62626
+  carrot orange: #F7692C
+  sunglow: #FFC32D
+  brilliant azure: #2CA7F4
+  ufo green: #25CE60
+  cosmic latte: #FFF9EB
 -------
+
+TO DOS
+- check stars background gif
 
 */
 
@@ -25,7 +35,7 @@ Colors:
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  border: 1px solid orange;
+  /* border: 1px solid orange; */
 }
 
 img {
@@ -43,6 +53,15 @@ img {
 .light-bg { background-color: #fefefe; }
 .dark-bg { background-color: #333333; }
 
+/*Gridlex RESET */
+[class*=col] {
+  padding: 0;
+}
+
+[class*=grid] {
+  margin: 0;
+}
+
 /* Universal Styles */
 /* Layout */
 header, div{
@@ -55,21 +74,13 @@ section.frame{
   padding: 1.5%;
 }
 
-/*Gridlex RESET */
-[class*=col] {
-  padding: 0;
-}
-
-[class*=grid] {
-  margin: 0;
-}
-
-/* General Styling*/
+/* General Styling */
 body{
   font-family: "Roboto", sans-serif;
   color: #333333;
   font-size: 1.1rem;
-  background-color: #1b1b1b;
+  background-image: url('../images/stars_slow.gif');
+  background-color: #0A1C38;
   height: 100vh;
 }
 
@@ -129,7 +140,7 @@ footer div{
 
 /* Main Content */
 div.story{
-  width: 65%;
+  width: 100%;
 }
 
 div.nextstep{
