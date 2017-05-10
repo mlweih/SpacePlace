@@ -35,7 +35,7 @@ TO DOS
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  border: 1px solid orange;
+  /* border: 1px solid orange; */
 }
 
 img {
@@ -69,7 +69,7 @@ header, div{
 }
 
 section.frame{
-  background-color: #eeeeee;
+  background-color: #FFF9EB;
   margin: 3%;
   padding: 1.5%;
 }
