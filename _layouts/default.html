@@ -27,10 +27,10 @@
 
 <!-- NEXT STEP LINKS
 --------------------------->
-    <div class="nextstep">
-      <h3>{{page.nexttitle}}</h3>
+    <div class="nextstep grid-spaceBetween">
+      <h3 class="col-12">{{page.nexttitle}}</h3>
       {% for spot in page.destinations %}
-      <a href="{{spot.weblink}}" class="button">{{spot.visit}}</a>
+      <a href="{{spot.weblink}}" class="col-4 button">{{spot.visit}}</a>
       {% endfor %}
     </div>
 
@@ -44,15 +44,7 @@
     </footer>
   </section>
 
-<!-- IMAGE DIVS START -->
-{% unless page.stars == "go" %}
-<section class="col">
-  {{content}}
-
-</section>
-{% endunless %}
-<!-- {{page.stars}} -->
-
+{{content}}
 
 </body>
 </html>
