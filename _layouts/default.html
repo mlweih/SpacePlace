@@ -45,11 +45,14 @@
   </section>
 
 <!-- IMAGE DIVS START -->
-{% unless page.stars == go %}
+{% unless page.stars == "go" %}
 <section class="col">
   {{content}}
+
 </section>
 {% endunless %}
+<!-- {{page.stars}} -->
+
 
 </body>
 </html>

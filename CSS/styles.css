@@ -35,7 +35,7 @@ TO DOS
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  /* border: 1px solid orange; */
+  border: 1px solid orange;
 }
 
 img {
@@ -74,6 +74,9 @@ section.frame{
   padding: 1.5%;
 }
 
+/* MOBILE LAYOUT */
+
+
 /* General Styling */
 body{
   font-family: "Roboto", sans-serif;
@@ -81,7 +84,7 @@ body{
   font-size: 1.1rem;
   background-image: url('../images/stars_slow.gif');
   background-color: #0A1C38;
-  height: 100vh;
+  /* height: 100vh; */
 }
 
 h1, h2, h3, h4, h5, h6{
