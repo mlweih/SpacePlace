@@ -16,12 +16,19 @@ Fonts:
   body: font-family: 'Roboto', sans-serif;
 Colors:
   maastricht blue: #0A1C38
+                  rgb(10,28,56)
   maximum red: #D62626
+              rgb(214,38,38)
   carrot orange: #F7692C
+                rgb(247,105,44)
   sunglow: #FFC32D
+          rgb(255,195,45)
   brilliant azure: #2CA7F4
+                  rgb(44,167,244)
   ufo green: #25CE60
+            rgb(37,206,96)
   cosmic latte: #FFF9EB
+                rgb(255,249,235)
 -------
 
 TO DOS
@@ -64,14 +71,22 @@ img {
 
 /* Universal Styles */
 /* Layout */
-header, div{
-  margin-bottom: 1.8%;
+header, div, div.nextstep{
+  margin-bottom: 2.5rem;
 }
 
 section.frame{
-  background-color: #FFF9EB;
+  background-color: rgba(0, 0, 0, 0.3);
   margin: 3%;
   padding: 1.5%;
+  border: 1px solid #FFF9EB;
+}
+
+section.frame-covers{
+  background-color: rgba(0, 0, 0, 0.3);
+  margin: 3%;
+  padding: 3%;
+  border: 1px solid #FFF9EB;
 }
 
 /* MOBILE LAYOUT */
@@ -79,8 +94,8 @@ section.frame{
 
 /* General Styling */
 body{
-  font-family: "Roboto", sans-serif;
-  color: #333333;
+  font-family: "Share Tech Mono", sans-serif;
+  color: #d7d7d7;
   font-size: 1.1rem;
   background-image: url('../images/stars_slow.gif');
   background-color: #0A1C38;
@@ -89,21 +104,24 @@ body{
 
 h1, h2, h3, h4, h5, h6{
   font-family: "Share Tech Mono", monospace;
-  color: #555555;
+  color: #FFF9eb;
 }
 
 h1{
   font-size: 2rem;
   margin-bottom: .5%;
+  color: #F7692C;
 }
 
 h2{
-  font-size: 1.5 rem;
+  font-size: 1rem;
+  color: #D62626;
 }
 
 h3{
+  font-family: "Share Tech Mono", monospace;
   font-size: 1.3rem;
-  margin-bottom: .5%
+  margin-bottom: 1rem;
 }
 
 p{
@@ -113,7 +131,7 @@ p{
 a{
   font-family: "Share Tech Mono", monospace;
   text-decoration: none;
-  color: #9b59b6;
+  color: #ffffff;
 }
 
 i{
@@ -121,8 +139,15 @@ i{
 }
 
 .button{
+  transition: background-color 0.3s ease;
   display: inline-block;
-  background-color: #f1c40f;
+  background-color: #2CA7F4;
+  text-align: center;
+  padding: 1%;
+}
+
+.button:hover{
+  background-color: #25CE60;
 }
 
 /* Header */
@@ -138,6 +163,16 @@ footer div{
   margin: 0;
 }
 
+footer a{
+  transition: all 1s ease;
+  color: #a7a7a7;
+  border-bottom: 1px dotted #a7a7a7;
+}
+
+footer a:hover{
+  color: #FFC32D;
+  border-bottom: 1px dotted #FFC32D;
+}
 
 /* Main Content */
 div.story{
