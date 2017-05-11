@@ -71,7 +71,7 @@ img {
 
 /* Universal Styles */
 /* Layout */
-header, div, div.nextstep{
+header, div.bottom-marg, div.nextstep{
   margin-bottom: 2.5rem;
 }
 
