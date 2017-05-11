@@ -3,11 +3,11 @@ layout: covers
 colwidth: -8
 instructions:
   - storyhead: Throttles Engaged
-    task:
+    tasks:
       - para: Describing the end of the journey
       - para: second end of the journey
   - storyhead: Second heading
-    task:
+    tasks:
       - para: Another Paragraph
       - para: And another
       - para: and another
@@ -19,7 +19,7 @@ instructions:
 {% for spot in page.instructions %}
     <div class="story">
       <h3>{{spot.storyhead}}</h3>
-      {% for spot in spot.task %}
+      {% for spot in spot.tasks %}
       <p>{{ spot.para }}</p>
       {% endfor %}
     </div>
