@@ -42,7 +42,7 @@ TO DOS
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 img {
@@ -71,7 +71,7 @@ img {
 
 /* Universal Styles */
 /* Layout */
-header, div.bottom-marg, div.nextstep{
+header, div.story, div.bottom-marg, div.nextstep{
   margin-bottom: 2.5rem;
 }
 
@@ -87,6 +87,10 @@ section.frame-covers{
   margin: 3%;
   padding: 3%;
   border: 1px solid #FFF9EB;
+}
+
+section.universe{
+  padding: 3%;
 }
 
 /* MOBILE LAYOUT */
@@ -134,10 +138,6 @@ a{
   color: #ffffff;
 }
 
-i{
-
-}
-
 .button{
   transition: background-color 0.3s ease;
   display: inline-block;
@@ -177,6 +177,19 @@ footer a:hover{
 /* Main Content */
 div.story{
   width: 100%;
+}
+
+/* Observatory */
+.topg{
+
+}
+
+.midg{
+  margin-top: 1rem;
+}
+
+.lowg{
+  margin-top: 1rem;
 }
 
 /* SVG Stuff Starts Here */
@@ -237,3 +250,21 @@ div.story{
 }
 
 /* SVG Styling */
+
+/* Observatory */
+.obv-sat{
+  padding: 2%;
+}
+
+.obv-star{
+  margin-top: 1rem;
+}
+
+.lowg .obv-star{
+  margin-left: 1rem;
+  margin-top: 2rem;
+}
+
+.midg .obv-star{
+  margin-bottom: 1rem;
+}
