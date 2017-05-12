@@ -42,7 +42,7 @@ TO DOS
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 img {
@@ -312,4 +312,22 @@ section.sat-uni{
 .saturn{
   transform: rotate(24deg);
   transform-origin: 50% 50%;
+}
+
+/* Moons */
+.path{
+  position: absolute;
+  width: 110vh;
+  height: 91vh;
+}
+
+.rel{
+  position: relative;
+}
+
+div.moon-universe{
+  background-image: url("../images/svg/arc2.svg");
+  background-position: left top;
+  background-repeat: no-repeat;
+  background-size: 175%;
 }
