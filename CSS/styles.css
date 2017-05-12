@@ -298,6 +298,10 @@ div.story{
 }
 
 /* Saturn */
+.sat-nav{
+  height: 100vh;
+}
+
 .saturn{
   transform: rotate(24deg);
   transform-origin: 50% 50%;
