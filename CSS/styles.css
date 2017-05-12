@@ -238,6 +238,10 @@ div.story{
 .sunglow-stroke{
   stroke: rgb(255,195,45);
 }
+
+.sunglow-stroke-lt{
+  stroke: rgba(255,195,45, 0.4)
+}
 .azure{
   fill: rgb(44,167,244);
 }
@@ -325,6 +329,7 @@ section.sat-uni{
   position: relative;
 }
 
+/* Idea - have gradient covering background image so it fades out, can stack bkgd images*/
 div.moon-universe{
   background-image: url("../images/svg/arc2.svg");
   background-position: left top;
