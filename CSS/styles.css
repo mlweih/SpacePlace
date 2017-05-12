@@ -42,7 +42,7 @@ TO DOS
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 img {
@@ -298,8 +298,19 @@ div.story{
 }
 
 /* Saturn */
+section.sat-uni{
+  padding-left: 3%;
+  padding-right: 3%;
+  padding-bottom: 0;
+  padding-top: 3%;
+}
+
 .sat-nav{
-  height: 100vh;
+  min-height: 70vh;
+}
+
+.sat-star{
+  min-height: 25vh;
 }
 
 .saturn{
