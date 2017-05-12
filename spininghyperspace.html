@@ -1,0 +1,35 @@
+---
+layout: spincovers 
+colwidth: -8
+instructions:
+  - storyhead: Throttles Engaged
+    tasks:
+      - para: Describing the end of the journey
+      - para: second end of the journey
+  - storyhead: Second heading
+    tasks:
+      - para: Another Paragraph
+      - para: And another
+      - para: and another
+      - para: and a fourth just for kicks
+---
+
+<!-- STORY Content PROBLEM AREA
+--------------------------->
+{% for spot in page.instructions %}
+    <div class="story">
+      <h3>{{spot.storyhead}}</h3>
+      {% for spot in spot.tasks %}
+      <p>{{ spot.para }}</p>
+      {% endfor %}
+    </div>
+{% endfor %}
+
+<!-- FOOTER HERE
+--------------------------->
+    <footer class="grid-4-right">
+      <div class="col">
+        <a href="/index.html">reset</a>
+      </div>
+    </footer>
+  </section>
