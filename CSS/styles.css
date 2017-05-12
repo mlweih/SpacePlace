@@ -277,6 +277,7 @@ div.story{
 /* Observatory */
 .obv-sat{
   padding: 2%;
+  transform: rotate(25deg);
 }
 
 .obv-star{
@@ -290,4 +291,9 @@ div.story{
 
 .midg .obv-star{
   margin-bottom: 1rem;
+}
+
+/* Milky Way */
+.midg .milky-star{
+  padding-top: 6rem;
 }
