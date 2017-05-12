@@ -42,7 +42,7 @@ TO DOS
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  /* border: 1px solid red; */
+  border: 1px solid red;
 }
 
 img {
@@ -91,10 +91,6 @@ section.frame-covers{
 
 section.universe{
   padding: 3%;
-}
-
-.universe svg{
-  display: inline-block;
 }
 
 /* MOBILE LAYOUT */
@@ -316,5 +312,4 @@ section.sat-uni{
 .saturn{
   transform: rotate(24deg);
   transform-origin: 50% 50%;
-
 }
