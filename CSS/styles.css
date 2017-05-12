@@ -42,7 +42,7 @@ TO DOS
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  /* border: 1px solid red; */
+  border: 1px solid red;
 }
 
 img {
@@ -341,4 +341,8 @@ div.moon-universe{
   background-size: 175%;
 }
 
-/* Constellations */
+.abs{
+  position: absolute;
+  z-index: -1;
+  padding-left: 5%;
+}
