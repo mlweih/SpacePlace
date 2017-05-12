@@ -42,7 +42,7 @@ TO DOS
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  /* border: 1px solid red; */
+  border: 1px solid red;
 }
 
 img {
@@ -297,7 +297,9 @@ div.story{
   margin-bottom: 1rem;
 }
 
-/* Milky Way */
-.midg .milky-star{
+/* Saturn */
+.saturn{
+  transform: rotate(24deg);
+  transform-origin: 50% 50%;
 
 }
