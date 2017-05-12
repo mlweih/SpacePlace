@@ -203,6 +203,10 @@ div.story{
   stroke: rgb(10,28,56);
 }
 
+.maastricht-stroke-lt{
+  stroke: rgba(10,28,56, 0.4);
+}
+
 .maxred{
   fill: rgb(214,38,38);
 }
@@ -295,5 +299,5 @@ div.story{
 
 /* Milky Way */
 .midg .milky-star{
-  padding-top: 6rem;
+
 }
