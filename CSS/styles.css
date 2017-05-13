@@ -42,7 +42,7 @@ TO DOS
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  /* border: 1px solid red; */
+  border: 1px solid red;
 }
 
 img {
@@ -285,7 +285,7 @@ div.story{
 /* Observatory */
 .obv-sat{
   padding: 2%;
-  transform: rotate(25deg);
+  /* transform: rotate(25deg); */
 }
 
 .obv-star{
@@ -633,21 +633,6 @@ div.moon-universe{
   transition: 0.2s;
 }
 
-.milkyway {
-    /* position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 120px;
-    height: 120px;
-    margin:-60px 0 0 -60px; */
-    -webkit-animation:spin 45s linear infinite;
-    -moz-animation:spin 45s linear infinite;
-    animation:spin 45s linear infinite;
-}
-@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
-@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
-@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
-
 /* EARTH */
 .night{
   fill: #743A6F;
@@ -655,4 +640,43 @@ div.moon-universe{
 
 .nightwater{
   fill: #217AB2;
+}
+
+/* Observatory Animation */
+
+#saturn_mini:hover{
+    animation: satrotate .3s infinite alternate;
+}
+
+@keyframes satrotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(20deg);
+  }
+}
+.armb{
+  fill: rgba(44,167,244, 1);
+  transition-timing-function: ease-in;
+  transition: 2s;
+}
+
+.armb:hover{
+  fill: rgb(255,249,235);
+  transition-timing-function: ease-out;
+  transition: 0.2s;
+}
+
+.armw{
+  fill: rgb(255,249,235);
+  transition-timing-function: ease-in;
+  transition: 2s;
+}
+
+.armw:hover{
+  fill: rgba(255,195,45,1);
+  transition-timing-function: ease-out;
+  transition: 0.2s;
 }
