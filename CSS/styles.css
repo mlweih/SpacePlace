@@ -561,6 +561,11 @@ div.moon-universe{
 	to { stroke: rgba(44,167,244, 0.4); }
 }
 
+.join:hover{
+  stroke: rgb(10,28,56);
+  transition: stroke .8s ease
+}
+
 /* MILKY WAY */
 
 .spikeb{
@@ -625,3 +630,16 @@ div.moon-universe{
 @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
 @-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
 @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+/* EARTH */
+
+.night{
+  fill: #743A6F;
+}
+
+.nightwater{
+  fill: #217AB2;
+}
+/*#big-cities{
+  display: none;
+}*/
