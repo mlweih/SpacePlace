@@ -42,7 +42,7 @@ TO DOS
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 img {
@@ -561,20 +561,31 @@ div.moon-universe{
 	to { stroke: rgba(44,167,244, 0.4); }
 }
 
-.join:hover{
+/* constellation paths */
+.join{
   stroke: rgb(10,28,56);
-  transition: stroke .8s ease
+  transition-timing-function: ease-in;
+  transition: 7s;
+}
+
+.join:hover{
+  stroke: rgba(44,167,244, 1);
+  transition-timing-function: ease-out;
+  transition: .2s;
 }
 
 /* MILKY WAY */
 
 .spikeb{
   stroke: rgb(10,28,56);
-  transition: stroke .8s ease;
+  transition-timing-function: ease-in;
+  transition: 10s;
 }
 
 .spikeb:hover{
   stroke: rgba(44,167,244, 1);
+  transition-timing-function: ease-out;
+  transition: 0.2s;
 }
 
 /* @-webkit-keyframes spikeb {
@@ -600,20 +611,26 @@ div.moon-universe{
 
 .spikeg{
   stroke: rgb(10,28,56);
-  transition: stroke .8s ease;
+  transition-timing-function: ease-in;
+  transition: 10s;
 }
 
 .spikeg:hover{
   stroke: rgba(37,206,96,1);
+  transition-timing-function: ease-out;
+  transition: 0.2s;
 }
 
 .spikey{
   stroke: rgb(10,28,56);
-  transition: stroke .8s ease;
+  transition-timing-function: ease-in;
+  transition: 10s;
 }
 
 .spikey:hover{
   stroke: rgba(255,195,45,1);
+  transition-timing-function: ease-out;
+  transition: 0.2s;
 }
 
 .milkyway {
@@ -632,7 +649,6 @@ div.moon-universe{
 @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
 
 /* EARTH */
-
 .night{
   fill: #743A6F;
 }
@@ -640,6 +656,3 @@ div.moon-universe{
 .nightwater{
   fill: #217AB2;
 }
-/*#big-cities{
-  display: none;
-}*/
