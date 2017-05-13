@@ -1,0 +1,32 @@
+---
+layout: covers
+colwidth: -7
+stars: go
+storyhead: WARNING! UNAUTHORIZED ACCESS !
+instructions:
+  - task: You do not have the appropriate Clearance for this section of the ship.
+  - task: Please return to passenger-approved corridors.
+  - task: Any further attempts at access will result in detainment.
+nexttitle:
+destinations:
+  - visit: Turn Around
+    weblink: /index.html
+---
+
+<!-- STORY Content PROBLEM AREA
+--------------------------->
+    <div class="story">
+      <h3 class="error">{{page.storyhead}}</h3>
+      {% for spot in page.instructions %}
+      <p class="error">{{spot.task}}</p>
+      {% endfor %}
+    </div>
+
+<!-- NEXT STEP LINKS
+--------------------------->
+    <div class="nextstep grid-spaceBetween">
+      <h3 class="col-12">{{page.nexttitle}}</h3>
+      {% for spot in page.destinations %}
+      <a href="{{spot.weblink}}" class="col-4 errorbutton">{{spot.visit}}</a>
+      {% endfor %}
+    </div>
