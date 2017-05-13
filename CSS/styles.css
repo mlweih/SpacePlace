@@ -560,3 +560,53 @@ div.moon-universe{
   from { stroke: rgba(10,28,56, 0.4); }
 	to { stroke: rgba(44,167,244, 0.4); }
 }
+
+/* MILKY WAY */
+
+.spikeb{
+  stroke: rgb(10,28,56);
+  transition: stroke 1.1s ease;
+}
+
+.spikeb:hover{
+  stroke: rgba(44,167,244, 1);
+}
+
+/* @-webkit-keyframes spikeb {
+	from { stroke: rgb(10,28,56); }
+	to { stroke: rgba(44,167,244, 1); }
+}
+@-moz-keyframes spikeb {
+  from { stroke: rgb(10,28,56); }
+	to { stroke: rgba(44,167,244, 1); }
+}
+@-ms-keyframes spikeb {
+  from { stroke: rgb(10,28,56); }
+	to { stroke: rgba(44,167,244, 1); }
+}
+@-o-keyframes spikeb {
+  from { stroke: rgb(10,28,56); }
+	to { stroke: rgba(44,167,244, 1); }
+}
+@keyframes spikeb {
+  from { stroke: rgb(10,28,56); }
+	to { stroke: rgba(44,167,244, 1); }
+} */
+
+.spikeg{
+  stroke: rgb(10,28,56);
+  transition: stroke 1.1s ease;
+}
+
+.spikeg:hover{
+  stroke: rgba(37,206,96,1);
+}
+
+.spikey{
+  stroke: rgb(10,28,56);
+  transition: stroke 1.1s ease;
+}
+
+.spikey:hover{
+  stroke: rgba(255,195,45,1);
+}
